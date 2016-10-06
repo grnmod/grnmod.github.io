@@ -5,25 +5,30 @@ body {
 /** FONT **/
 
 @font-face {
-  font-family: 'Roboto-Regular';
-  src: url(/gfont/Roboto-Regular.ttf);
+  font-family: RobotoL;
+  src: url(fonts/RobotoL.ttf);
+}
+
+@font-face {
+  font-family: RobotoR;
+  src: url(/fonts/RobotoR.ttf);
 }
 
 p {
-  font-family: 'Roboto Light', sans-seri;
+  font-family: 'RobotoL';
   font-size: 18px;
   text-align: center;
 }
 
 h1 {
   color: #2f3c4f;
-  font-family: 'Roboto Light', sans-seri;
+  font-family: 'RobotoL';
   font-size: 30px;
 }
 
 h3 {
   color: white;
-  font-family: 'Roboto Light', sans-seri;
+  font-family: 'RobotoL';
   font-size: 18px;
   text-align: center;
 }
@@ -31,7 +36,7 @@ h3 {
 h2 {
   text-align: center;
   color: #2f3c4f;
-  font-family: 'Roboto Light', sans-seri;
+  font-family: 'RobotoL';
   font-size: 30px;
 }
 
@@ -44,7 +49,7 @@ h5 {
 
 .ititle p {
   color: #506e86;
-  font-family: 'Roboto Light', sans-seri;
+  font-family: 'RobotoL';
   font-size: 12px;
 }
 
@@ -71,7 +76,7 @@ h5 {
 }
 
 a {
-  font-family: 'Roboto Light', sans-seri;
+  font-family: 'RobotoL';
   font-size: 18px;
   color: #2f3c4f;
 }
@@ -89,7 +94,7 @@ button {
   font-size: 12px;
   box-shadow: 0 3px #de703b;
   font-size: 12px;
-  font-family: 'Roboto Light', sans-seri;
+  font-family: 'RobotoL';
   display: block;
 }
 
@@ -114,7 +119,7 @@ input[type="text"] {
 }
 
 li,ol {
-  font-family: 'Roboto Light', sans-seri;
+  font-family: 'RobotoL';
   list-style: none;
   color: white;
   font-size: 14px;
@@ -134,7 +139,13 @@ header {
 }
 
 .logo {
-  margin-top: 26px;
+  margin-top: 29px;
+}
+
+.logo p {
+  font-family: 'RobotoR', sans-serif;
+  color: #2f3c4f;
+  font-size: 18px;
 }
 
 @media (max-width: 767px) {
@@ -149,9 +160,12 @@ header {
 .top-menu span {
   color: #506e86;
   font-size: 14px;
-  position: sticky;
+  position: absolute;
 }
 
+.logo span {
+  margin-left: 4px;
+}
 
 .tel{
   margin-top: 30px;
@@ -174,7 +188,7 @@ header {
   font-size: 18px;
   color: #fcb040;
   position: relative;
-  font-family: 'Roboto-Regular';
+  font-family: 'RobotoR',sans-serif;
 }
 
 button.order {
