@@ -139,7 +139,7 @@ header {
 }
 
 .logo {
-  margin-top: 29px;
+  margin-top: 25px;
 }
 
 .logo p {
@@ -168,7 +168,7 @@ header {
 }
 
 .tel{
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 @media (max-width: 767px) {
@@ -224,6 +224,7 @@ button.order:active {
 .advetage {
   height: 529px;
   background: url(image/bgtop.png);
+  box-shadow: inset 0 0 3px 10px #777, inset 0 0 -3px 10px #777;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -473,14 +474,17 @@ button.adventage_btn:hover {
 .case2 {
   margin-top: 112px;
   background-color: #fff3e0;
-
   background-position: center;
+  background-image: url(image/by.png);
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .case2 p {
   color: #2f3c4f;
   font-size: 30px;
-  text-align: left;
+  text-align: justify;
+  margin-left: 60px;
 }
 
 @media (max-width: 767px) {
@@ -516,8 +520,9 @@ button.adventage_btn:hover {
 .feedback {
   height: 360px;
   background: url(image/bgtop.png);
+  background-color: rgba(0, 0, 0, 0.7);
   background-attachment: fixed;
-  background-position: center;
+  box-shadow: inset 0 0 3px 10px #777, inset 0 0 -3px 10px #777;
   background-repeat: no-repeat;
   background-size: cover;
 }

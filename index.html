@@ -30,7 +30,7 @@
             </div>
 
             <div class="col-lg-2">
-              <div class="wow pulse" data-wow-iteration="999">
+              <div class="wow pulse">
               <a href="#call">
               <button type="button" class="order">Перезвоните мне</button>
               </a>
@@ -148,11 +148,11 @@
 
         <div class="infoicon">
           <div class="col-lg-2 col-lg-offset-2">
-            <img src="./css/image/ricon1.png" alt="Звонок от gruzchiki-online" class=" ricon wow bounceInLeft">
+            <img src="./css/image/ricon1.png" alt="Звонок от gruzchiki-online" class="center-block ricon wow bounceInLeft">
             <p>Мы сами перезвоним Вам и уточним все детали</p>
           </div>
           <div class="col-lg-2 col-lg-offset-1">
-            <img src="./css/image/ricon2.png" alt="Упаковка" class=" ricon wow bounceInDown">
+            <img src="./css/image/ricon2.png" alt="Упаковка" class="center-block ricon wow bounceInDown">
             <p>Провезем бесплатную качетвенную упаковку</p>
           </div>
           <div class="col-lg-2 col-lg-offset-1">
@@ -314,11 +314,11 @@
   <div class="case2">
     <div class="container">
       <div class="row bottoms">
-        <div class="col-lg-6">
+        <div class="col-lg-7">
           <p>Погрузку и переезд осуществляют только квалифицированные рабочие</p>
           <p class="casetext3">Ваша мебель находится в надежных руках</p>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-5">
           <img src="./css/image/box.png" alt="" class="img-responsive center-block wow fadeInRight">
         </div>
           </div>
@@ -346,24 +346,6 @@
       </div>
     </div>
   </div>
-
-  <?php
-  if (isset($_POST['name'])) {$name = $_POST['name'];}
-  if (isset($_POST['adres'])) {$adres = $_POST['adres'];}
-  if (isset($_POST['problema'])) {$problema = $_POST['problema'];}
-  $address = "mr.justers@gmail.com";
-  $sub = "Онлайн-заявка";
-  $mes = "Имя: $name \nАдрес: $adres \nПроблема: \n$problema";
-  $send = mail ($address,$sub,$mes,"Content-type:text/plain; charset = utf-8\r\nFrom:$email");
-  if ($send == 'true')
-  {
-  echo "Сообщение отправлено!";
-  }
-  else
-  {
-  echo "Сообщение не отправлено!";
-  }
-  ?>
 
   <!-- contact -->
   <div class="contact">
