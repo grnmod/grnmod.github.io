@@ -335,10 +335,7 @@
           <h2>Закажите перевозки без хлопот</h2>
           <div class="col-lg-8">
           <form>
-            <input type="hidden" name="project_name" value="Грузчики онлайн">
-  		      <input type="hidden" name="admin_email" value="mr.justers@gmail.com">
-  		      <input type="hidden" name="form_subject" value="Заказ на звонок">
-            <input type="text" placeholder="Введите номер телефона" name="Phone">
+            <input type="text" placeholder="Введите номер телефона" name="name">
           </div>
           <div class="col-lg-4">
           <button type="button" class="order">Перезвоните мне</button>
@@ -350,6 +347,23 @@
     </div>
   </div>
 
+  <?php
+  if (isset($_POST['name'])) {$name = $_POST['name'];}
+  if (isset($_POST['adres'])) {$adres = $_POST['adres'];}
+  if (isset($_POST['problema'])) {$problema = $_POST['problema'];}
+  $address = "mr.justers@gmail.com";
+  $sub = "Онлайн-заявка";
+  $mes = "Имя: $name \nАдрес: $adres \nПроблема: \n$problema";
+  $send = mail ($address,$sub,$mes,"Content-type:text/plain; charset = utf-8\r\nFrom:$email");
+  if ($send == 'true')
+  {
+  echo "Сообщение отправлено!";
+  }
+  else
+  {
+  echo "Сообщение не отправлено!";
+  }
+  ?>
 
   <!-- contact -->
   <div class="contact">
