@@ -3,21 +3,32 @@ body {
 }
 
 /** FONT **/
+
+@font-face {
+  font-family: RobotoL;
+  src: url(fonts/RobotoL.ttf);
+}
+
+@font-face {
+  font-family: RobotoR;
+  src: url(/fonts/RobotoR.ttf);
+}
+
 p {
-  font-family: 'Roboto Light', sans-seri;
+  font-family: 'RobotoL';
   font-size: 18px;
   text-align: center;
 }
 
 h1 {
   color: #2f3c4f;
-  font-family: 'Roboto Light', sans-seri;
+  font-family: 'RobotoL';
   font-size: 30px;
 }
 
 h3 {
   color: white;
-  font-family: 'Roboto Light', sans-seri;
+  font-family: 'RobotoL';
   font-size: 18px;
   text-align: center;
 }
@@ -25,11 +36,12 @@ h3 {
 h2 {
   text-align: center;
   color: #2f3c4f;
-  font-family: 'Roboto Light', sans-seri;
+  font-family: 'RobotoL';
   font-size: 30px;
 }
 
 h5 {
+
   text-align: center;
   color: #506e86;
   font-size: 14px;
@@ -37,7 +49,7 @@ h5 {
 
 .ititle p {
   color: #506e86;
-  font-family: 'Roboto Light', sans-seri;
+  font-family: 'RobotoL';
   font-size: 12px;
 }
 
@@ -53,7 +65,10 @@ h5 {
 
 .not-hover {
   position: relative;
+}
 
+.info2 p {
+  color: #506e86;
 }
 
 .not-hover:hover .ititle {
@@ -61,10 +76,11 @@ h5 {
 }
 
 a {
-  font-family: 'Roboto Light', sans-seri;
+  font-family: 'RobotoL';
   font-size: 18px;
   color: #2f3c4f;
 }
+
 
 a:hover {
   text-decoration: none;
@@ -78,16 +94,16 @@ button {
   font-size: 12px;
   box-shadow: 0 3px #de703b;
   font-size: 12px;
-  font-family: 'Roboto Light', sans-seri;
+  font-family: 'RobotoL';
   display: block;
 }
 
 header {
-
-  height: 100%;
-  width: 100%;
+  background-color: white;
   box-shadow: 0px 0 20px #dac7b9;
   z-index: 2;
+  margin: 0;
+  width: 100%;
 }
 
 input[type="text"] {
@@ -103,7 +119,7 @@ input[type="text"] {
 }
 
 li,ol {
-  font-family: 'Roboto Light', sans-seri;
+  font-family: 'RobotoL';
   list-style: none;
   color: white;
   font-size: 14px;
@@ -115,8 +131,21 @@ li,ol {
   background-color: white;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 0 20px #dac7b9;
+  z-index: 1000;
+}
+
 .logo {
-  margin-top: 26px;
+  margin-top: 29px;
+}
+
+.logo p {
+  font-family: 'RobotoR', sans-serif;
+  color: #2f3c4f;
+  font-size: 18px;
 }
 
 @media (max-width: 767px) {
@@ -131,9 +160,12 @@ li,ol {
 .top-menu span {
   color: #506e86;
   font-size: 14px;
-  position: sticky;
+  position: absolute;
 }
 
+.logo span {
+  margin-left: 4px;
+}
 
 .tel{
   margin-top: 30px;
@@ -156,6 +188,7 @@ li,ol {
   font-size: 18px;
   color: #fcb040;
   position: relative;
+  font-family: 'RobotoR',sans-serif;
 }
 
 button.order {
@@ -163,6 +196,10 @@ button.order {
   background-color: #fcb040;
   width: 160px;
   height: 42px;
+}
+
+.img-responsive {
+  max-width: none;
 }
 
 @media (max-width: 767px) {
@@ -174,9 +211,14 @@ button.order {
 }
 
 button.order:active {
+  margin-top: 30px;
   height: 45px;
   box-shadow: none;
   margin-top: 16px;
+}
+
+.feedback button.order:active {
+  margin-top: 3px;
 }
 
 .advetage {
@@ -244,10 +286,6 @@ button.adventage_btn:hover {
   padding-top: 68px;
 }
 
-.image {
-
-}
-
 .info3 {
   padding-top: 112px;
 }
@@ -284,6 +322,7 @@ button.adventage_btn:hover {
 
 .ricon {
   padding: 30px;
+  align-items: center;
 }
 
 .by {
@@ -453,7 +492,7 @@ button.adventage_btn:hover {
 }
 
 .bottoms {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .casetext3 {
@@ -585,7 +624,7 @@ button.adventage_btn:hover {
 }
 
 .sn {
-  padding-bottom: 100px;
+  padding-bottom: 140px;
 }
 
 @media (max-width: 767px) {
