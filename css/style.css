@@ -98,12 +98,8 @@ button {
   display: block;
 }
 
-header {
-  background-color: white;
-  box-shadow: 0px 0 20px #dac7b9;
-  z-index: 2;
-  margin: 0;
-  width: 100%;
+@media (max-width: 767px) {
+            .tel {display: none;}
 }
 
 input[type="text"] {
@@ -136,6 +132,20 @@ header {
   width: 100%;
   box-shadow: 0px 0 20px #dac7b9;
   z-index: 1000;
+  background-color: white;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+            header {position: inherit;}
+}
+
+.wow {
+
+}
+
+@media (max-width: 767px) {
+            .wow {animation: none;}
 }
 
 .logo {
@@ -196,6 +206,7 @@ button.order {
   background-color: #fcb040;
   width: 160px;
   height: 42px;
+  z-index: 1000;
 }
 
 .img-responsive {
@@ -488,11 +499,11 @@ button.adventage_btn:hover {
 }
 
 @media (max-width: 767px) {
-            .case2 p {text-align: center; margin-bottom: 40px; font-size: 28px;}
+            .case2 p {text-align: center; margin-bottom: 40px; font-size: 28px; margin-left: 0px;}
 }
 
 @media (max-width: 970px) {
-            .case2 p {text-align: center; margin-bottom: 40px; font-size: 28px;}
+            .case2 p {text-align: center; margin-bottom: 40px; font-size: 28px; margin-left: 0px;}
 }
 
 .bottoms {
