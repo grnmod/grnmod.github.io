@@ -5,7 +5,7 @@ $(document).ready(function() {
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "js/mail.php", //Change
+			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
 			alert("Спасибо, мы вам перезвоним!");
