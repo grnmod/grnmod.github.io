@@ -27,12 +27,14 @@
           </div>
             <div class="col-lg-2 col-md-offset-6 tel">
               <a href="tel:+37529 8736322">+37529 <span>8736322</span></a>
+              <p>08:00 - 22:00</p>
             </div>
 
-            <div class="col-lg-2">
-              <div class="wow pulse">
-              <a href="#call">
-              <button type="button" class="order">Перезвоните мне</button>
+            <div class="col-lg-2 ss">
+              <button type="button" class="vk"><i class="fa fa-vk" aria-hidden="true"></i></button>
+              <button type="button" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></button>
+              <a href="https://www.youtube.com/user/Ravinification/videos?view=0&sort=dd&shelf_id=0" target="_blank">
+              <button type="button" class="youtube"><i class="fa fa-youtube" aria-hidden="true"></i></button>
               </a>
               </div>
             </div>
@@ -335,10 +337,10 @@
           <h2>Закажите перевозки без хлопот</h2>
           <div class="col-lg-8">
           <form>
-            <input type="text" placeholder="Введите номер телефона" name="name">
+            <input type="text" placeholder="Введите номер телефона" name="Грузчики онлайн" required="required">
           </div>
           <div class="col-lg-4">
-          <button type="button" class="order">Перезвоните мне</button>
+          <button type="submit" class="order">Перезвоните мне</button>
           </form>
           </div>
         </div>
@@ -364,12 +366,18 @@
       </div>
       <div class="col-lg-2 telephon">
         <h3>Телефон</h3>
-        <a href="tel:+37529 8736322">+37529 <span>8736322</span></a>
+        <p><a href="tel:+37529 8736322">+37529 <span>8736322</span></a></p>
+        <p><a href="https://vk.com/flatternstudio"><i class="fa fa-cog fa-spin fa-fw"></i>
+<span class="sr-only">Loading...</span>FLATTERN</a></p>
       </div>
       <div class="col-lg-2 sn">
         <h3>Социальные сети</h3>
+        <a href="">
         <button type="button" class="vk"><i class="fa fa-vk" aria-hidden="true"></i></button>
+        </a>
+        <a href="">
         <button type="button" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></button>
+        </a>
         <a href="https://www.youtube.com/user/Ravinification/videos?view=0&sort=dd&shelf_id=0" target="_blank">
         <button type="button" class="youtube"><i class="fa fa-youtube" aria-hidden="true"></i></button>
         </a>
@@ -394,6 +402,21 @@
     <script src="js/wow.min.js"></script>
 <script>
     new WOW().init();
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+$("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
+        var form_data = $(this).serialize(); //собераем все данные из формы
+        $.ajax({
+        type: "POST", //Метод отправки
+        url: "send.php", //путь до php фаила отправителя
+        data: form_data,
+        success: function() {
+               //код в этом блоке выполняется при успешной отправке сообщения
+              <h2>Спасибо за отправку сообщения</h2> 
+        });
+});
+});
 </script>
   </body>
 </html>

@@ -178,7 +178,7 @@ header {
 }
 
 .tel{
-  margin-top: 25px;
+  margin-top: 14px;
 }
 
 @media (max-width: 767px) {
@@ -191,6 +191,10 @@ header {
 
 .tel a {
   color: #2f3c4f;
+  font-size: 14px;
+}
+
+.tel p {
   font-size: 14px;
 }
 
@@ -282,6 +286,10 @@ button.adventage_btn {
   border: 1px solid #fcb040;
   margin: 31px auto;
 
+}
+
+.fa-cog {
+  color: #fcb040;
 }
 
 button.adventage_btn:hover {
@@ -668,6 +676,22 @@ button.adventage_btn:hover {
   height: 36px;
   width: 36px;
   font-size: 18px;
+}
+
+.ss button {
+  margin-top: 16px;
+  display: inline-block;
+  height: 36px;
+  width: 36px;
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+            .ss {text-align: center;}
+}
+
+@media (max-width: 970px) {
+            .ss {text-align: center;}
 }
 
 button.vk {
