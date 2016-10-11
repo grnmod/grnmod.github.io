@@ -149,7 +149,15 @@ header {
 }
 
 .logo {
-  margin-top: 25px;
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+            .logo {padding-bottom: 10px;}
+}
+
+@media (max-width: 970px) {
+            .logo {margin-bottom: 10px;}
 }
 
 .logo p {
@@ -158,23 +166,10 @@ header {
   font-size: 18px;
 }
 
-@media (max-width: 767px) {
-            .logo {margin: 18 auto;}
-}
-
-@media (max-width: 970px) {
-            .logo {margin: 18 auto;}
-}
-
-
 .top-menu span {
   color: #506e86;
   font-size: 14px;
   position: absolute;
-}
-
-.logo span {
-  margin-left: 4px;
 }
 
 .tel{
