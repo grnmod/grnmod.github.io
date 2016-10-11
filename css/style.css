@@ -99,7 +99,7 @@ button {
 }
 
 @media (max-width: 767px) {
-            .tel {display: none;}
+            .tel {text-align: center;}
 }
 
 input[type="text"] {
@@ -182,11 +182,11 @@ header {
 }
 
 @media (max-width: 767px) {
-            .tel {display: none;}
+            .tel {margin: auto;}
 }
 
 @media (max-width: 970px) {
-            .tel {display: none;}
+            .tel {margin: auto;}
 }
 
 .tel a {
@@ -514,7 +514,7 @@ button.adventage_btn:hover {
 .case2 p {
   color: #2f3c4f;
   font-size: 30px;
-  text-align: justify;
+  text-align: right;
   margin-left: 60px;
 }
 
@@ -629,6 +629,10 @@ button.adventage_btn:hover {
   margin-bottom: 26px;
 }
 
+.contact a {
+  color: #506e86;
+}
+
 @media (max-width: 767px) {
             .contact h3 {text-align: center; margin-top: 50px;}
 }
@@ -673,9 +677,15 @@ button.adventage_btn:hover {
 
 .sn button {
   display: inline-block;
-  height: 36px;
-  width: 36px;
-  font-size: 18px;
+  height: 32px;
+  width: 32px;
+  font-size: 16px;
+}
+
+.sn button:active {
+  margin-top: 2px;
+  height: 32px;
+  box-shadow: none;
 }
 
 .ss button {
@@ -686,12 +696,22 @@ button.adventage_btn:hover {
   font-size: 18px;
 }
 
+.ft {
+  padding-top: 6px;
+}
+
+.ss button:active {
+  margin-top: 18px;
+  height: 36px;
+  box-shadow: none;
+}
+
 @media (max-width: 767px) {
-            .ss {text-align: center;}
+            .ss {display: none;}
 }
 
 @media (max-width: 970px) {
-            .ss {text-align: center;}
+            .ss {display: none;}
 }
 
 button.vk {
@@ -708,4 +728,12 @@ button.youtube {
 button.instagram {
   background-color: #e4405f;
   box-shadow: 0 3px #bd081c;
+}
+
+.ft {
+
+}
+
+@media (max-width: 767px) {
+            .ft {text-align: center;}
 }
