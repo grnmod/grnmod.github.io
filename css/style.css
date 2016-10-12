@@ -149,7 +149,7 @@ header {
 }
 
 .logo {
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 @media (max-width: 767px) {
@@ -173,7 +173,7 @@ header {
 }
 
 .tel{
-  margin-top: 14px;
+  margin-top: 13px;
 }
 
 @media (max-width: 767px) {
@@ -186,18 +186,28 @@ header {
 
 .tel a {
   color: #2f3c4f;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .tel p {
   font-size: 14px;
+  margin-left: 54px;
+}
+
+@media (max-width: 767px) {
+            .tel p {margin: auto;}
+}
+
+@media (max-width: 970px) {
+            .tel p {margin: auto;}
 }
 
 .tel span {
-  font-size: 18px;
+  font-size: 20px;
   color: #fcb040;
   position: relative;
   font-family: 'RobotoR',sans-serif;
+
 }
 
 button.order {
@@ -262,8 +272,38 @@ button.order:active {
   margin-bottom: 30px;
 }
 
+.refr {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+@media (max-width: 767px) {
+            .refr {display: none;}
+}
+
+@media (max-width: 970px) {
+            .reft {display: none;}
+}
+
+.refresh {
+  font-size: 20px;
+  color: #2f3c4f;
+  font-family: 'RobotoL';
+}
+
 .fa-check:before {
   padding: 8px;
+}
+
+.fa-refresh {
+  margin-top: 6px;
+  float: right;
+  margin-right: 130px;
+  color: #bdc3c7;
+}
+
+.fa-refresh:hover {
+  color: #fcb040;
 }
 
 .puncts li {
