@@ -593,6 +593,14 @@ button.adventage_btn:hover {
   background-size: cover;
 }
 
+.uzor {
+  margin-top: 85px;
+  height: 96px;
+  background-image: url(image/uzorс.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
 .feedbg {
   margin-top: 112px;
   background: rgba(0,0,0,0.25);
