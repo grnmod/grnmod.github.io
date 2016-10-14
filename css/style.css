@@ -432,6 +432,21 @@ button.adventage_btn:hover {
             .caseone {background: #fff3e0;}
 }
 
+.caseone img{
+  position: relative;
+  bottom: 0;
+  vertical-align: bottom;
+  margin-top: 160px;
+}
+
+@media (max-width: 767px) {
+            .caseone img {display: none;}
+}
+
+@media (max-width: 970px) {
+            .caseone img {display: none;}
+}
+
 .casetext1 {
   color: #2f3c4f;
   font-size: 30px;
