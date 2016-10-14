@@ -11,8 +11,10 @@ body {
 
 @font-face {
   font-family: RobotoR;
-  src: url(/fonts/RobotoR.ttf);
+  src: url(fonts/RobotoR.ttf);
 }
+
+
 
 p {
   font-family: 'RobotoL';
@@ -22,7 +24,7 @@ p {
 
 h1 {
   color: #2f3c4f;
-  font-family: 'RobotoL';
+  font-family: 'RobotoR';
   font-size: 30px;
 }
 
@@ -36,7 +38,7 @@ h3 {
 h2 {
   text-align: center;
   color: #2f3c4f;
-  font-family: 'RobotoL';
+  font-family: 'RobotoR';
   font-size: 30px;
 }
 
@@ -261,6 +263,8 @@ button.order:active {
   border-radius: 5px;
 }
 
+
+
 .puncts h3 {
   margin-top: 14px;
   margin-bottom: 34px;
@@ -335,9 +339,6 @@ button.adventage_btn:hover {
 .info2 {
   background-color: #fff3e0;
   padding-bottom: 60px;
-  background-image: url(image/by.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
 }
 
 .infolist p {
@@ -419,7 +420,7 @@ button.adventage_btn:hover {
 
 .caseone {
   margin-top: 123px;
-  background: url(image/casebg.png) no-repeat;
+  background: url(image/pattern1.png) no-repeat;
   background-position: center;
 }
 
@@ -541,7 +542,7 @@ button.adventage_btn:hover {
   margin-top: 112px;
   background-color: #fff3e0;
   background-position: center;
-  background-image: url(image/pattern.png);
+  background-image: url(image/pattern1.png);
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -608,6 +609,14 @@ button.adventage_btn:hover {
   background-position: top;
 }
 
+@media (max-width: 767px) {
+            .uzor1 {display: none;}
+}
+
+@media (max-width: 970px) {
+            .uzor1 {display: none;}
+}
+
 .feedbg {
   margin-top: 112px;
   background: rgba(0,0,0,0.25);
@@ -627,6 +636,8 @@ button.adventage_btn:hover {
   color: white;
   margin-top: 22px;
   margin-bottom: 18px;
+  font-family: 'RobotoL';
+  font-size: 26px;
 }
 
 @media (max-width: 767px) {
@@ -669,7 +680,7 @@ button.adventage_btn:hover {
 
 
 .contact h2 {
-  padding-top: 112px;
+  padding-top: 100px;
   margin-bottom: 95px;
 }
 
