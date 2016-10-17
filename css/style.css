@@ -162,12 +162,6 @@ header {
             .logo {margin-bottom: 10px;}
 }
 
-.logo p {
-  font-family: 'RobotoR', sans-serif;
-  color: #2f3c4f;
-  font-size: 18px;
-}
-
 .top-menu span {
   color: #506e86;
   font-size: 14px;
@@ -350,16 +344,23 @@ button.adventage_btn:hover {
   padding-top: 68px;
 }
 
+
 .infolist  {
   padding-top: 68px;
 }
 
 .info3 {
-  padding-top: 112px;
+  padding-top: 92px;
+}
+
+.onas {
+ color: #ff9f00;
 }
 
 .info3 h1 {
   text-align: center;
+  line-height: 34px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 767px) {
@@ -371,7 +372,7 @@ button.adventage_btn:hover {
 }
 
 .infoicon {
-  padding-top: 73px;
+  padding-top: 86px;
 }
 
 .infoicon p {
@@ -399,11 +400,31 @@ button.adventage_btn:hover {
 }
 
 .line {
-  margin-top: 50px;
+  width: 100%;
+  margin-top: 96px;
   margin-bottom: 112px;
-  height: 1px;
-  opacity: 0.25;
-  background-color: #506e86;
+  background-color: #fff3e0;
+  background: url(image/pattern1.png) no-repeat;
+}
+
+.line h1::before {
+  content: '"';
+  font-size: 40px;
+  color: #ff9f00;
+}
+
+.line h1::after {
+  content: '"';
+  font-size: 40px;
+  color: #ff9f00;
+}
+
+.line h1 {
+  font-family: 'RobotoL';
+  font-style: italic;
+  text-align: center;
+  padding-top: 26px;
+  padding-bottom: 36px;
 }
 
 .reviews .line {
@@ -567,6 +588,7 @@ button.adventage_btn:hover {
   font-size: 30px;
   text-align: right;
   margin-left: 60px;
+  font-family: 'RobotoL';
 }
 
 @media (max-width: 767px) {
