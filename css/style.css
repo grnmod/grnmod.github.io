@@ -424,10 +424,12 @@ button.adventage_btn:hover {
   content: '"';
   font-size: 40px;
   color: #ff9f00;
+  font-family: "Local";
 }
 
 .line h1::after {
   content: '"';
+  font-family: "Local";
   font-size: 40px;
   color: #ff9f00;
 }
@@ -436,8 +438,8 @@ button.adventage_btn:hover {
   font-family: 'RobotoL';
   font-style: italic;
   text-align: center;
-  padding-top: 26px;
-  padding-bottom: 36px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .twoline {
@@ -449,20 +451,22 @@ button.adventage_btn:hover {
   text-align: center;
   font-family: "RobotoL";
   font-style: italic;
-  padding-top: 28px;
-  padding-bottom: 36px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .twoline h1::before {
   content: '"';
   font-size: 40px;
   color: #ff9f00;
+  font-family: "Local";
 }
 
 .twoline h1::after {
   content: '"';
   font-size: 40px;
   color: #ff9f00;
+  font-family: "Local";
 }
 
 .reviews .line {
