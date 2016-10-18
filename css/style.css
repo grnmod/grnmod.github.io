@@ -375,6 +375,18 @@ button.adventage_btn:hover {
   padding-top: 86px;
 }
 
+.bonus p {
+  margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+            .bonus p {margin-top: 30px; margin-bottom: 35px;}
+}
+
+@media (max-width: 970px) {
+            .bonus p {margin-top: 30px; margin-bottom: 45px;}
+}
+
 .infoicon p {
   margin-top: 27px;
   margin-bottom: 45px;
@@ -398,6 +410,7 @@ button.adventage_btn:hover {
   position: relative;
   bottom: 0;
 }
+
 
 .line {
   width: 100%;
