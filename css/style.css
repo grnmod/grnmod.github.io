@@ -427,6 +427,31 @@ button.adventage_btn:hover {
   padding-bottom: 36px;
 }
 
+.twoline {
+  margin-top: 140px;
+  background: url(image/pattern1.png) no-repeat;
+}
+
+.twoline h1 {
+  text-align: center;
+  font-family: "RobotoL";
+  font-style: italic;
+  padding-top: 28px;
+  padding-bottom: 36px;
+}
+
+.twoline h1::before {
+  content: '"';
+  font-size: 40px;
+  color: #ff9f00;
+}
+
+.twoline h1::after {
+  content: '"';
+  font-size: 40px;
+  color: #ff9f00;
+}
+
 .reviews .line {
   margin-top: 25px;
 }
@@ -521,7 +546,7 @@ button.adventage_btn:hover {
 }
 
 .reviews {
-  padding-top: 145px;
+  padding-top: 20px;
 }
 
 .carousel {
