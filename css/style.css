@@ -155,11 +155,11 @@ header {
 }
 
 @media (max-width: 767px) {
-            .logo {padding-bottom: 10px;}
+            .logo {padding-bottom: 10px; transform: none;}
 }
 
 @media (max-width: 970px) {
-            .logo {margin-bottom: 10px;}
+            .logo {margin-bottom: 10px; transform: none;}
 }
 
 .top-menu span {
@@ -257,6 +257,13 @@ button.order:active {
   border-radius: 5px;
 }
 
+@media (max-width: 767px) {
+            .puncts {background: none;}
+}
+
+@media (max-width: 970px) {
+            .puncts {background: none;}
+}
 
 .puncts h3 {
   margin-top: 14px;
@@ -311,13 +318,25 @@ button.order:active {
   color: #fcb040;
 }
 
+ul {
+
+}
+
+@media (max-width: 767px) {
+            .puncts ul {padding: 0; margin: 0; list-style: none;}
+}
+
+@media (max-width: 970px) {
+            .puncts ul {padding: 0; margin: 0; list-style: none;}
+}
+
 .puncts li {
   margin-top: 24px;
   margin-left: 46px;
 }
 
 @media (max-width: 767px) {
-            .puncts li {margin-left: 0px;}
+            .puncts li {; text-align: center;}
 }
 
 @media (max-width: 970px) {
