@@ -113,7 +113,7 @@ input[type="text"] {
   border: 1px;
   border-radius: 5px;
   outline:0 none !important;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 li,ol {
@@ -292,6 +292,14 @@ button.order:active {
   padding: 8px;
 }
 
+@media (max-width: 767px) {
+            .fa-check:before {display: none;}
+}
+
+@media (max-width: 970px) {
+            .fa-check:before {display: none;}
+}
+
 .fa-refresh {
   margin-top: 6px;
   float: right;
@@ -384,6 +392,10 @@ button.adventage_btn:hover {
 
 .infoicon {
   padding-top: 86px;
+}
+
+.line .ornament {
+  padding-bottom: 12px;
 }
 
 .bonus p {
@@ -484,6 +496,9 @@ button.adventage_btn:hover {
   margin-top: 25px;
 }
 
+.info4 {
+}
+
 .info4 p {
   margin-top: 56px;
 }
@@ -520,6 +535,7 @@ button.adventage_btn:hover {
 @media (max-width: 970px) {
             .caseone img {display: none;}
 }
+
 
 .casetext1 {
   color: #2f3c4f;
@@ -675,7 +691,7 @@ button.adventage_btn:hover {
 }
 
 .feedback {
-  height: 360px;
+  height: 460px;
   background: url(image/bgtop.png);
   background-color: rgba(0, 0, 0, 0.7);
   background-attachment: fixed;
@@ -685,7 +701,7 @@ button.adventage_btn:hover {
 }
 
 .uzor {
-  margin-top: 85px;
+  margin-top: 75px;
   height: 96px;
   background-image: url(image/uzorс.png);
   background-repeat: no-repeat;
@@ -708,14 +724,14 @@ button.adventage_btn:hover {
 }
 
 .feedbg {
-  margin-top: 112px;
+  margin-top: 102px;
   background: rgba(0,0,0,0.25);
   opacity: 0,12;
-  border-radius: 5px;
+  border-radius: 5px 5px 0px 0px;
 }
 
 @media (max-width: 767px) {
-            .feedbg {height: 200px; background: none;}
+            .feedbg {height: 200px; background: none; margin-top: 80px;}
 }
 
 @media (max-width: 970px) {
@@ -748,6 +764,33 @@ button.adventage_btn:hover {
 
 @media (max-width: 970px) {
             .contact p text-align: center;
+}
+
+hr {
+  width: 50%;
+  background-color: #e6e6e6;
+}
+
+.sale {
+  background: rgba(0,0,0,0.25);
+  opacity: 0,12;
+  border-radius: 0px 0px 5px 5px;
+  padding-bottom: 11px;
+}
+
+@media (max-width: 767px) {
+            .sale {background: none;}
+}
+
+@media (max-width: 970px) {
+            .sale {background: none;}
+}
+
+.sale p {
+  font-family: "RobotoL",sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 14px;
 }
 
 .infobox {
