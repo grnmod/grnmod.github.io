@@ -258,7 +258,6 @@ button.order:active {
 }
 
 
-
 .puncts h3 {
   margin-top: 14px;
   margin-bottom: 34px;
@@ -306,7 +305,15 @@ button.order:active {
 
 .puncts li {
   margin-top: 24px;
-  margin-left: 24px;
+  margin-left: 46px;
+}
+
+@media (max-width: 767px) {
+            .puncts li {margin-left: 0px;}
+}
+
+@media (max-width: 970px) {
+            .puncts li {margin-left: 0;}
 }
 
 button.adventage_btn {
@@ -351,6 +358,10 @@ button.adventage_btn:hover {
 
 .info3 {
   padding-top: 92px;
+}
+
+.puncts span {
+  color: #fcb040;
 }
 
 .onas {
