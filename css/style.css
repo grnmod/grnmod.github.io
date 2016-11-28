@@ -20,6 +20,16 @@ p {
   font-family: 'Open Sans Light', sans-serif;
   font-size: 18px;
 }
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 /*   ИНПУТЫ   */
 
 button {
@@ -35,6 +45,11 @@ ul {
 
 li {
   display: inline-block;
+}
+
+a:focus {
+  color: white;
+  text-decoration: none;
 }
 
 .header {
@@ -89,6 +104,10 @@ button.menu__button {
 
 .advantages__info,.order__info {
   padding-bottom: 90px;
+}
+
+@media (max-width: 767px) {
+            .advantages__info,.order__info {padding-bottom: 40px;}
 }
 
 .order {
@@ -155,7 +174,18 @@ button.orderinfo__button:hover {
   padding-right: 0px;
   margin-left: 30px;
   margin-top: 30px;
+  position: relative;
+  overflow: hidden;
 }
+
+@media (max-width: 767px) {
+            .product__console {width: 100%; margin-left: 0px;}
+}
+
+@media (max-width: 970px) {
+            .product__console {width: 100%; margin-left: 0px;}
+}
+
 
 .product__img {
   float: right;
@@ -180,7 +210,7 @@ button.orderinfo__button:hover {
   text-align: left;
 }
 
-button.product__button {
+button.product__button,button.forms__button {
   background-color: #2e94b9;
   color: white;
   padding: 10px 30px;
@@ -199,6 +229,37 @@ button.product__button {
   padding-left: 12px;
 }
 
+.info__p, .info__cost {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transition: all .5s ease;
+}
+
+.info__p {
+  z-index: 2;
+}
+
+.infop {
+  margin: 6px 0px 22px 0px;
+}
+
+.info__p.active {
+  margin-left: -200px;
+}
+
+.info__cost {
+  z-index: 0;
+  margin-top: -300px;
+}
+.info__cost.active {
+  margin-top: 1px;
+}
+
+.info__cost ul {
+  padding: 4px 4px 4px 4px;
+}
+
 .product__info {
   padding: 24px;
   transition: 1s;
@@ -212,12 +273,25 @@ button.product__button {
   opacity: 0;
 }
 
+.glyphicon {
+  color: #337ab7;
+}
+
 .forms input {
   display: block;
 }
 
+.forms a {
+  text-decoration: none;
+  border-bottom: 1px dashed white;
+}
+
 .item h3 {
   font-family: 'Open Sans Regular', sans-serif;
+}
+
+.reviews a {
+  color: #2e94b9;
 }
 
 .reviews h1 {
@@ -225,11 +299,19 @@ button.product__button {
 }
 
 .slider__img {
-  padding: 16px 0px 0px 180px;
+  margin: 16px 0px 0px 180px;
+}
+
+@media (max-width: 767px) and (max-width: 970px) {
+  .slider__img {margin: 0 auto;}
 }
 
 .item h3,.item p,.item a {
   text-align: left;
+}
+
+@media (max-width: 767px) and (max-width: 970px){
+  .item h3,.item p,.item a {text-align: center; font-size: 14px;}
 }
 
 .forms {
@@ -240,6 +322,7 @@ button.product__button {
 .forms h1 {
   color: white;
   padding-top: 60px;
+  padding-bottom: 54px;
 }
 
 .forms__text p {
@@ -255,15 +338,52 @@ input[type=text] {
   font-size: 18px;
   margin-bottom: 32px;
   outline: none;
+  color: white;
+  width: 280px;
 }
 
-input[type=text]::a {
+input[type=text]:focus {
   border: none;
   border-bottom: 1px solid #2e94b9;
 }
 
 .forms__info {
+  background: rgba(0,0,0,0.15);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
-  height: 491px;
-  
+  height: 426px;
+  padding-top: 64px;
+}
+
+button.forms__button {
+  background: none;
+  border: 1px solid #2e94b9;
+  box-shadow: none;
+}
+
+/*eee*/
+
+body { overflow-x: hidden; }
+
+.navbar, .navbar-inverse {
+	border-radius: 0;
+	border: none;
+	margin-bottom: 0;
+	min-height: 80px;
+}
+
+.nav li {
+	display: inline;
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #ffffff;
+	font-family: Lato;
+	font-size: 1.7em;
+	font-weight: 300;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+	transition: 0.7s all linear;
+	height: 100%;
 }
