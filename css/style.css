@@ -59,6 +59,10 @@ a:focus {
   height: 730px;
 }
 
+@media (max-width: 767px) and (max-width: 970px) {
+  .header {height: 580px;}
+}
+
 .menu {
   margin-top: 24px;
 }
@@ -77,15 +81,25 @@ a:focus {
   padding-left: 46px;
 }
 
+@media (max-width: 767px) and (max-width: 970px) {
+  .menu li {display: none;}
+}
+
 .orderinfo h1,h3 {
   text-align: left;
 }
+
 
 button.menu__button {
   padding: 4px 14px;
   border: 1px solid white;
   font-size: 14px;
   text-transform: uppercase;
+}
+
+button.menu__button:hover {
+  background-color: #2e94b9;
+  border: 1px solid #2e84b9;
 }
 
 .advantages h3,p, .order h3,p   {
@@ -107,7 +121,7 @@ button.menu__button {
 }
 
 @media (max-width: 767px) {
-            .advantages__info,.order__info {padding-bottom: 40px;}
+      .advantages__info,.order__info {padding-bottom: 40px;}
 }
 
 .order {
@@ -124,10 +138,15 @@ button.menu__button {
   padding-top: 160px;
 }
 
+@media (max-width: 767px) and (max-width: 970px) {
+  .orderinfo {padding: 0 auto;}
+}
+
 .orderinfo h3 {
   padding-top: 8px;
   padding-bottom: 16px;
 }
+
 
 button.orderinfo__button, .menu__button {
   border: 2px solid #2e94b9;
@@ -229,6 +248,14 @@ button.product__button,button.forms__button {
   padding-left: 12px;
 }
 
+.product__cost:before {
+  content: "Цены";
+}
+
+.product__cost.myclass:before{
+    content:"Назад";
+}
+
 .info__p, .info__cost {
   width: 200px;
   height: 200px;
@@ -314,6 +341,10 @@ button.product__button,button.forms__button {
   .item h3,.item p,.item a {text-align: center; font-size: 14px;}
 }
 
+@media (max-width: 767px) and (max-width: 970px) {
+  .item a {display: none;}
+}
+
 .forms {
   margin-top: 62px;
   background: url(img/forms_bg.png);
@@ -323,6 +354,10 @@ button.product__button,button.forms__button {
   color: white;
   padding-top: 60px;
   padding-bottom: 54px;
+}
+
+@media (max-width: 767px) and (max-width: 970px) {
+  .forms h1 {padding-top: 30px; padding-bottom: 22px;}
 }
 
 .forms__text p {
@@ -342,6 +377,10 @@ input[type=text] {
   width: 280px;
 }
 
+@media (max-width: 767px) and (max-width: 970px) {
+  input[type=text] {font-size: 14px; width: 270px;}
+}
+
 input[type=text]:focus {
   border: none;
   border-bottom: 1px solid #2e94b9;
@@ -349,41 +388,79 @@ input[type=text]:focus {
 
 .forms__info {
   background: rgba(0,0,0,0.15);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.75);
   height: 426px;
   padding-top: 64px;
+  margin-bottom: 56px;
+}
+
+@media (max-width: 767px) and (max-width: 970px) {
+  .forms__info p {font-size: 14px;}
+}
+
+@media (max-width: 767px) and (max-width: 970px) {
+  .forms__info {height: 586px; padding-top: 12px;}
 }
 
 button.forms__button {
   background: none;
   border: 1px solid #2e94b9;
   box-shadow: none;
+  margin: 22px 0px 0px 0px
 }
 
-/*eee*/
-
-body { overflow-x: hidden; }
-
-.navbar, .navbar-inverse {
-	border-radius: 0;
-	border: none;
-	margin-bottom: 0;
-	min-height: 80px;
+.contacts {
+  background-color: #ebf3f7;
+  margin-top: 34px;
 }
 
-.nav li {
-	display: inline;
-	color: white;
+.contacts__info h3,.contacts__info p {
+  text-align: left;
+  color: #475053;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-	color: #ffffff;
-	font-family: Lato;
-	font-size: 1.7em;
-	font-weight: 300;
+.contacts__info h3 {
+  font-family: 'Open Sans Regular', sans-serif;
+  padding-top: 12px;
 }
 
-.navbar-inverse .navbar-nav li a:hover {
-	transition: 0.7s all linear;
-	height: 100%;
+.contacts__info {
+  padding-top: 46px;
+}
+
+.social {
+  padding-top: 46px;
+  padding-bottom: 23px;
+}
+
+
+.sc {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+@media (max-width: 767px) and (max-width: 970px) {
+  .sc {margin-right: 12px;}
+}
+
+.fa {
+  padding: 16px;
+  border-radius: 100%;
+  background-color: #c5e0eb;
+  text-align: center;
+}
+
+.social i {
+  color: #2e94b9;
+  font-size: 24px;
+}
+
+.contacts__maps {
+  padding-right: 0px;
+  padding-left: 0px;
+  height: auto;
+}
+
+.contacts_h1 {
+  margin: 80px 0px 80px 0px;
 }
