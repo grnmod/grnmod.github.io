@@ -197,8 +197,8 @@ button.orderinfo__button:hover {
   overflow: hidden;
 }
 
-@media @media (max-width: @screen-xs-max) {
-            .product__console {margin: 0 auto;}
+@media (max-width: 1170px) and (max-width: 1170px){
+    .product__console {margin-left: 0px; width: auto;}
 }
 
 
