@@ -197,11 +197,7 @@ button.orderinfo__button:hover {
   overflow: hidden;
 }
 
-@media (max-width: 767px) {
-            .product__console {width: 100%; margin-left: 0px;}
-}
-
-@media (max-width: 970px) {
+@media (max-width: 767px) and (min-width: 970px) {
             .product__console {width: 100%; margin-left: 0px;}
 }
 
@@ -388,7 +384,6 @@ input[type=text]:focus {
 
 .forms__info {
   background: rgba(0,0,0,0.15);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.75);
   height: 426px;
   padding-top: 64px;
   margin-bottom: 56px;
