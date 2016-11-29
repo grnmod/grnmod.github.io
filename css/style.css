@@ -180,10 +180,6 @@ button.orderinfo__button:hover {
   text-align: center;
 }
 
-.product_console {
-  margin-top: 30px;
-}
-
 .product__console {
   width: 350px;
   height: 390px;
@@ -233,6 +229,12 @@ button.product__button,button.forms__button {
   margin: 22px;
 }
 
+@media (min-width: 400px) and (max-width: 970px) {
+  button.product__button {
+    margin: 22px;
+  }
+}
+
 .button {
   color: #2e94b9;
 }
@@ -241,7 +243,6 @@ button.product__button,button.forms__button {
   font-size: 18px;
   color: #2e94b9;
   display: inline-block;
-  padding-left: 12px;
 }
 
 .product__cost:before {
