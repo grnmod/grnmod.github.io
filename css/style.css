@@ -102,7 +102,7 @@ button.menu__button:hover {
   border: 1px solid #2e84b9;
 }
 
-.advantages h3,p, .order h3,p   {
+.advantages h3,p, .order h3,p, .flattern h3 {
   text-align: center;
   color: #475053;
 }
@@ -157,7 +157,7 @@ button.orderinfo__button, .menu__button {
   transition: 0.5s;
 }
 
-button.orderinfo__button:hover {
+button.orderinfo__button:hover,button.forms__button:hover {
   background-size:100% 100%;
   transition: 0.5s;
 }
@@ -168,7 +168,6 @@ button.orderinfo__button:hover {
 
 .product {
   background: url(img/console_bg.png);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
   padding-bottom: 80px;
 }
 
@@ -245,6 +244,7 @@ button.product__button,button.forms__button {
   font-size: 18px;
   color: #2e94b9;
   display: inline-block;
+  padding: inherit;
 }
 
 .product__cost:before {
@@ -308,8 +308,7 @@ button.product__button,button.forms__button {
 }
 
 .forms a {
-  text-decoration: none;
-  border-bottom: 1px dashed white;
+  color: #2e94b9;
 }
 
 .item h3 {
@@ -405,7 +404,10 @@ button.forms__button {
   background: none;
   border: 1px solid #2e94b9;
   box-shadow: none;
-  margin: 22px 0px 0px 0px
+  margin: 22px 0px 0px 0px;
+  background: url(img/t.png) no-repeat left 50%;
+  background-size:0% 100%;
+  transition: 0.5s;
 }
 
 .contacts {
@@ -425,6 +427,11 @@ button.forms__button {
 
 .contacts__info {
   padding-top: 46px;
+  box-shadow: 2px 3px 36px -11px rgba(0,0,0,0.52);
+}
+
+.contacts_info {
+  padding-left: 80px;
 }
 
 .social {
@@ -432,6 +439,10 @@ button.forms__button {
   padding-bottom: 23px;
 }
 
+::-webkit-input-placeholder {
+   color: white;
+   opacity: 0.5;
+}
 
 .sc {
   display: inline-block;
@@ -462,4 +473,13 @@ button.forms__button {
 
 .contacts_h1 {
   margin: 80px 0px 80px 0px;
+}
+
+.flattern {
+  background: #acdcee;
+  margin-top: 68px;
+}
+
+.flattern h3 {
+  padding: 32px 0px 32px 0px;
 }
