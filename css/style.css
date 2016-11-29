@@ -128,6 +128,10 @@ button.menu__button:hover {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.04);
 }
 
+.advantages__info p {
+  line-height: 20px;
+}
+
 .order h3,p {
   text-align: center;
 }
@@ -193,7 +197,7 @@ button.orderinfo__button:hover {
   overflow: hidden;
 }
 
-@media (max-width: 400px) and (max-width: 1170px){
+@media (max-width: 320px) and (max-width: 400px) and (max-width: 1170px){
     .product__console {margin-left: 0px; width: auto;}
 }
 
@@ -215,7 +219,9 @@ button.orderinfo__button:hover {
 
 .product__console h1 {
   color: #2e94b9;
+  padding-right: 15px;
 }
+
 
 .product__console p {
   text-align: left;
@@ -384,7 +390,7 @@ input[type=text]:focus {
 }
 
 .forms__info {
-  background: rgba(0,0,0,0.15);
+  background: rgba(255,255,255,0.15);
   height: 426px;
   padding-top: 64px;
   margin-bottom: 56px;
