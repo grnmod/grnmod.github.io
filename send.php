@@ -1,6 +1,6 @@
 <?
 if((isset($_POST['names'])&&$_POST['names']!="")&&(isset($_POST['phone'])&&$_POST['phone']!=""))&&(isset($_POST['console'])&&$_POST['console']!=""))&&(isset($_POST['days'])&&$_POST['days']!="")){ //Проверка отправилось ли наше поля name и не пустые ли они
-        $to = 'mazgod@gail.com'; //Почта получателя, через запятую можно указать сколько угодно адресов
+        $to = 'playbox_by@mail.ru'; //Почта получателя, через запятую можно указать сколько угодно адресов
         $subject = 'Заказ приставки'; //Загаловок сообщения
         $message = '
                 <html>

@@ -91,10 +91,17 @@ a:focus {
   .menu li {display: none;}
 }
 
-.orderinfo h1,h3 {
+.orderinfo h1, .orderinfo p {
   text-align: left;
+  color: white;
 }
 
+
+.orderinfo_p {
+  margin-top: 16px;
+  margin-bottom: 26px;
+  font-size: 16px;
+}
 
 button.menu__button {
   padding: 4px 14px;
