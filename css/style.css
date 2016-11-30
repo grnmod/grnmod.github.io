@@ -387,6 +387,12 @@ button.product__button,button.forms__button {
   background: url(img/forms_bg.png);
 }
 
+@media (max-width: 767px) and (max-width: 970px) {
+  .forms{
+    background: url(img/forms_bg2.png);
+  }
+}
+
 .forms h1 {
   color: white;
   padding-top: 60px;
@@ -432,7 +438,15 @@ input[type=text]:focus {
 }
 
 @media (max-width: 767px) and (max-width: 970px) {
-  .forms__info p {font-size: 14px;}
+  .forms__info {
+    background: none;
+  }
+}
+
+@media (max-width: 767px) and (max-width: 970px) {
+  .forms__info p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 767px) and (max-width: 970px) {

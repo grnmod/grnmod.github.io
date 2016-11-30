@@ -317,11 +317,13 @@
         <p>Для консолей PS4 и Xbox One возможен залог по договору.</p>
       </div>
     <div class="col-lg-3 col-lg-offset-1 forms__input">
-        <input type="text" placeholder="Ваше имя">
-        <input type="text" placeholder="Ваш телефон">
-        <input type="text" placeholder="Какая приставка">
-        <input type="text" placeholder="На какой срок">
-        <button class="forms__button">Отправить</button>
+      <form>
+        <input type="text" placeholder="Ваше имя" name="names:" required="required">
+        <input type="text" placeholder="Ваш телефон" name="phone:" required="required">
+        <input type="text" placeholder="Какая приставка" name="console:" required="required">
+        <input type="text" placeholder="На какой срок" name="days:" required="required">
+        <button type="submit" class="forms__button">Отправить</button>
+      </form>
         </div>
       </div>
     </div>
@@ -366,6 +368,21 @@
     <script>
     $('.product__cost').click(function(){$(this).toggleClass('myclass')})
     </script>
+    <script src="js/script.js"></script>
+    <script>
+$(document).ready(function(){
+$("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
+        var form_data = $(this).serialize(); //собераем все данные из формы
+        $.ajax({
+        type: "POST", //Метод отправки
+        url: "send.php", //путь до php фаила отправителя
+        data: form_data,
+        success: function() {
+               //код в этом блоке выполняется при успешной отправке сообщения
+              });
+});
+});
+</script>
     <script>
     $(document).ready(function(){
     $('.product__cost').click(function(){
