@@ -72,6 +72,12 @@ a:focus {
   font-size: 18px;
 }
 
+@media (max-width: 767px) and (max-width: 970px) {
+  .menu__logo {
+    text-align: center;
+  }
+}
+
 .menu__logo img {
   padding: 0px 8px;
 }
@@ -143,7 +149,7 @@ button.menu__button:hover {
 }
 
 @media (max-width: 767px) and (max-width: 970px) {
-  .orderinfo {padding: 0 auto;}
+  .orderinfo {padding-top: 100px;}
 }
 
 .orderinfo h3 {
@@ -177,6 +183,12 @@ button.orderinfo__button:hover,button.forms__button:hover {
 
 .product__text {
   margin-top: 90px;
+}
+
+@media (max-width: 767px) and (max-width: 970px) {
+  .product__text {
+    margin-top: 45px;
+  }
 }
 
 .product__text h3 {
@@ -270,6 +282,10 @@ button.product__button,button.forms__button {
   z-index: 2;
 }
 
+.info__p a {
+  color: #475053;
+}
+
 .infop {
   margin: 6px 0px 22px 0px;
 }
@@ -311,6 +327,11 @@ button.product__button,button.forms__button {
   border-radius: 100px;
 }
 
+@media (max-width: 767px) and (max-width: 970px) {
+  .glyphicon {
+    border: none;
+  }
+}
 
 .forms input {
   display: block;
@@ -452,6 +473,12 @@ button.forms__button {
   padding-left: 80px;
 }
 
+@media (max-width: 767px) and (max-width: 970px) {
+  .contacts_info {
+    padding-left: 0;
+  }
+}
+
 .social {
   padding-top: 46px;
   padding-bottom: 23px;
@@ -499,5 +526,5 @@ button.forms__button {
 }
 
 .flattern h3 {
-  padding: 32px 0px 32px 0px;
+  padding: 12px 0px 12px 0px;
 }
