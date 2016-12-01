@@ -73,8 +73,8 @@ a:focus {
 }
 
 @media (max-width: 767px) and (max-width: 970px) {
-  .menu__logo {
-    text-align: center;
+  span.logo__text {
+    display: none;
   }
 }
 
@@ -87,8 +87,34 @@ a:focus {
   padding-left: 46px;
 }
 
+.col__li5 {
+  display: none;
+}
+
 @media (max-width: 767px) and (max-width: 970px) {
-  .menu li {display: none;}
+  .menu li {
+  padding-left: 0px;
+  }
+}
+
+@media (max-width: 767px) and (max-width: 970px) {
+  .col__li1, .col__li2, .col__li4 {
+  display: none;
+  }
+}
+
+@media (max-width: 767px) and (max-width: 970px) {
+  .col__li3, .col__li5 {
+  display: block;
+  font-size: 14px;
+  margin: 4px 0px 0px 58px;
+  }
+}
+
+@media (max-width: 767px) and (max-width: 970px) {
+  ul.menu__ul {
+  display: flex;
+  }
 }
 
 .orderinfo h1, .orderinfo p {
@@ -96,8 +122,8 @@ a:focus {
   color: white;
 }
 
-
 .orderinfo_p {
+  line-height: 16px;
   margin-top: 16px;
   margin-bottom: 26px;
   font-size: 16px;
@@ -259,8 +285,24 @@ button.product__button,button.forms__button {
   }
 }
 
+button.product__button:hover {
+  padding: 11px 31px;
+}
+
 .button {
   color: #2e94b9;
+}
+
+.games {
+  color: #2e94b9;
+  cursor: pointer;
+}
+
+.games i {
+  font-size: 14px;
+  border: none;
+  background: none;
+  padding: 4px 0px 0px 4px;
 }
 
 .product__cost {
@@ -268,6 +310,11 @@ button.product__button,button.forms__button {
   color: #2e94b9;
   display: inline-block;
   padding: inherit;
+  cursor: pointer;
+}
+
+.product__cost:hover {
+  text-decoration: underline;
 }
 
 .product__cost:before {
@@ -302,7 +349,7 @@ button.product__button,button.forms__button {
 }
 
 .info__cost {
-  z-index: 0;
+  z-index: 1;
   margin-left: -300px;
 }
 .info__cost.active {
@@ -431,6 +478,24 @@ input[type=text]:focus {
   border-bottom: 1px solid #2e94b9;
 }
 
+.modal {
+  text-align: center;
+}
+
+.modal ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+    }
+
+.modal li {
+  float: inherit;
+  padding: 3px 4px;
+  margin: 3px 0px 0px 3px;
+  border-radius: 6px;
+  background-color: #e6e6e6;
+}
+
 .forms__info {
   background: rgba(255,255,255,0.15);
   height: 426px;
@@ -521,6 +586,10 @@ button.forms__button {
   text-align: center;
 }
 
+.fa-facebook {
+  padding: 16px 20px 16px 20px;
+}
+
 .social i {
   color: #2e94b9;
   font-size: 24px;
@@ -536,11 +605,33 @@ button.forms__button {
   margin: 80px 0px 80px 0px;
 }
 
-.flattern {
+.footer {
   background: #acdcee;
   margin-top: 68px;
 }
 
-.flattern h3 {
-  padding: 12px 0px 12px 0px;
+@media (max-width: 767px) and (max-width: 970px) {
+.footer {
+  margin-top: 8px;
+  background: none;
+  }
+}
+
+.footer h3 {
+  padding: 10px 0px 22px 0px;
+}
+
+@media (max-width: 767px) and (max-width: 970px) {
+.footer h3 {
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  }
+}
+.partners {
+  padding-top: 18px;
+}
+
+@media (max-width: 767px) and (max-width: 970px) {
+  .partners {display: none;}
 }

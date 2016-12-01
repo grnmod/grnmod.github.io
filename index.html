@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Прокат консолей в Минск</title>
+    <title>Прокат приставок в Минске</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./css/img/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="https://use.fontawesome.com/bb3ab80a8a.js"></script>
@@ -15,25 +16,27 @@
     <div class="header">
       <div class="container">
       <div class="row menu">
-        <div class="col-lg-2 menu__logo"><img src="./css/img/ilogo.png" alt="logo"/>Playbox</div>
+        <div class="col-xs-2 menu__logo"><img src="./css/img/ilogo.png" alt="logo"/><span class="logo__text">Playbox</span></div>
 
-        <div class="col-lg-6 col-lg-offset-4">
-          <ul>
-            <li> <a href="#iinfo">О нас</a></li>
-            <li><a href="#ifeed">Отзывы</a></li>
-            <li><a href="#icontacts">Контакты</a></li>
-            <li><button class="menu__button"><a href="#iforms">Заказать</a></button></li>
+        <div class="col-sm-6 col-sm-offset-4">
+          <ul class="menu__ul">
+            <li class="col__li1"><a href="#iorder">Как заказать</a></li>
+            <li class="col__li2"> <a href="#iinfo">Почему мы</a></li>
+            <li class="col__li3"><a href="#ifeed">Отзывы</a></li>
+            <li class="col__li4"><a href="#icontacts">Контакты</a></li>
+            <li class="col__li5"><a href="#iconsole">Цены</a></li>
           </ul>
         </div>
+
       </div>
         <div class="col-lg-5 orderinfo">
-          <h1>Прокат консолей в Минске</h1>
+          <h1>Прокат приставок в Минске</h1>
           <div class="orderinfo_p">
           <p><a href="tel:+375291383560">+37529 138 35 60 Вел</a></p>
           <p><a href="tel:+375336383560">+37533 638 35 60 Мтс</a></p>
-          <p>С 9.00 до 23.00 ежедневно</p>
+          <p>С 9.00 до 23.00 Ежедневно</p>
           </div>
-          <button class="orderinfo__button"><a href="#iforms">Заказать консоль</a></button>
+          <button class="orderinfo__button"><a href="#iforms">Заказать приставку</a></button>
         </div>
       </div>
       </div>
@@ -46,7 +49,7 @@
           <h1>Наш ассортимент</h1>
           <h3>Выберите приставку по своему вкусу</h3>
           </div>
-          <div class="product_console">
+          <div class="product_console" id="iconsole">
           <div class="col-lg-4 product__console">
             <h1>PlayStation 4</h1>
             <img src="./css/img/ps4.png" alt="ps4" class="product__img">
@@ -54,7 +57,7 @@
             <div class="info__p">
             <h3 class="infop">В комплекте:</h3>
             <p>- 2 геймпада</p>
-            <p><a href="https://vk.com/topic-46913491_32971866" target="_blank">- 15 игр</a></p>
+            <p data-toggle="modal" data-target="#myModal" class="games">- 15 игр<i class="fa fa-angle-left"></i></p>
             </div>
             <div class="info__cost">
             <h3>Цены</h3>
@@ -71,13 +74,59 @@
             <div class="product__cost"></div>
           </div>
           <div class="col-lg-4 product__console">
+            <h1>XBOX ONE</h1>
+            <img src="./css/img/xbox_one.png" alt="xbox_one" class="product__img">
+            <div class="product__info">
+            <div class="info__p">
+            <h3 class="infop">В комплекте:</h3>
+            <p>- 2 геймпада</p>
+            <p data-toggle="modal" data-target="#myModal" class="games">- 15 игр<i class="fa fa-angle-left"></i></p>
+            </div>
+            <div class="info__cost">
+            <h3>Цены</h3>
+            <ul>
+              <li>1 сутки - 20 BYN</li>
+              <li>2 суток - 30 BYN</li>
+              <li>5 суток - 60 BYN</li>
+              <li>1 неделя - 80 BYN</li>
+              <li>1 месяц - 240 BYN</li>
+            </ul>
+            </div>
+            </div>
+            <button class="product__button"><a href="#iforms">Заказать</a></button>
+            <div class="product__cost"></div>
+          </div>
+          <div class="col-lg-4 product__console">
+            <h1>XBOX 360</h1>
+            <img src="./css/img/xbox360.png" alt="xbox360" class="product__img">
+            <div class="product__info">
+            <div class="info__p">
+            <h3 class="infop">В комплекте:</h3>
+            <p>- 2 геймпада</p>
+            <p data-toggle="modal" data-target="#myModal" class="games">- 30 игр <i class="fa fa-angle-left"></i></p>
+            </div>
+            <div class="info__cost">
+            <h3>Цены</h3>
+            <ul>
+              <li>1 сутки - 10 BYN</li>
+              <li>2 суток - 15 BYN</li>
+              <li>5 суток - 30 BYN</li>
+              <li>1 неделя - 40 BYN</li>
+              <li>1 месяц - 120 BYN</li>
+            </ul>
+            </div>
+            </div>
+            <button class="product__button"><a href="#iforms">Заказать</a></button>
+            <div class="product__cost"></div>
+          </div>
+          <div class="col-lg-4 product__console">
             <h1>PlayStation 3</h1>
             <img src="./css/img/ps3.png" alt="ps3" class="product__img">
             <div class="product__info">
             <div class="info__p">
             <h3 class="infop">В комплекте:</h3>
             <p>- 2 геймпада</p>
-            <p><a href="https://vk.com/topic-46913491_32971866" target="_blank">- 20 игр</a></p>
+            <p data-toggle="modal" data-target="#myModal" class="games">- 20 игр<i class="fa fa-angle-left"></i></p>
             </div>
             <div class="info__cost">
             <h3>Цены</h3>
@@ -118,52 +167,6 @@
             <div class="product__cost"></div>
           </div>
           <div class="col-lg-4 product__console">
-            <h1>XBOX 360</h1>
-            <img src="./css/img/xbox360.png" alt="xbox360" class="product__img">
-            <div class="product__info">
-            <div class="info__p">
-            <h3 class="infop">В комплекте:</h3>
-            <p>- 2 геймпада</p>
-            <p><a href="https://vk.com/topic-46913491_32971866" target="_blank">- 30 игр</a></p>
-            </div>
-            <div class="info__cost">
-            <h3>Цены</h3>
-            <ul>
-              <li>1 сутки - 10 BYN</li>
-              <li>2 суток - 15 BYN</li>
-              <li>5 суток - 30 BYN</li>
-              <li>1 неделя - 40 BYN</li>
-              <li>1 месяц - 120 BYN</li>
-            </ul>
-            </div>
-            </div>
-            <button class="product__button"><a href="#iforms">Заказать</a></button>
-            <div class="product__cost"></div>
-          </div>
-          <div class="col-lg-4 product__console">
-            <h1>XBOX ONE</h1>
-            <img src="./css/img/xbox_one.png" alt="xbox_one" class="product__img">
-            <div class="product__info">
-            <div class="info__p">
-            <h3 class="infop">В комплекте:</h3>
-            <p>- 2 геймпада</p>
-            <p><a href="https://vk.com/topic-46913491_32971866" target="_blank">- 15 игр</a></p>
-            </div>
-            <div class="info__cost">
-            <h3>Цены</h3>
-            <ul>
-              <li>1 сутки - 20 BYN</li>
-              <li>2 суток - 30 BYN</li>
-              <li>5 суток - 60 BYN</li>
-              <li>1 неделя - 80 BYN</li>
-              <li>1 месяц - 240 BYN</li>
-            </ul>
-            </div>
-            </div>
-            <button class="product__button"><a href="#iforms">Заказать</a></button>
-            <div class="product__cost"></div>
-          </div>
-          <div class="col-lg-4 product__console">
             <h1>XBOX Kinect</h1>
             <img src="./css/img/xbox_kinect.png" alt="xbox_kinect" class="product__img">
             <div class="product__info">
@@ -191,7 +194,7 @@
       </div>
     </div>
 
-    <div class="order">
+    <div class="order" id="iorder">
     <div class="container">
       <div class="row">
         <h1>Как происходит заказ</h1>
@@ -208,12 +211,12 @@
         <div class="col-lg-3 order__info">
           <img src="./css/img/ilist.png" alt="Любимые игры" class="center-block order__round">
           <h3>Договор и оплата</h3>
-          <p>Состовляем договор <br> аренды и оплачиваете <br> заказ</p>
+          <p>Составляем договор <br> аренды и оплачиваете <br> заказ</p>
         </div>
         <div class="col-lg-3 order__info">
           <img src="./css/img/ips.png" alt="Любимые игры" class="center-block order__round">
           <h3>Игровой процесс</h3>
-          <p>Все готово, можете наслаждаться игрой в приставку</p>
+          <p>Все готово, можете наслаждаться игрой на приставке</p>
         </div>
       </div>
     </div>
@@ -236,12 +239,12 @@
         <div class="col-lg-3 advantages__info">
           <img src="./css/img/icost.png" alt="Любимые игры" class="center-block">
           <h3>Низкие цены</h3>
-          <p>По настоящему антикризисные цены</p>
+          <p>По - настоящему антикризисные цены</p>
         </div>
         <div class="col-lg-3 advantages__info">
           <img src="./css/img/imobile.png" alt="Любимые игры" class="center-block">
           <h3>Обратный звонок</h3>
-          <p>Мы сами бесплатно вам перезвоним</p>
+          <p>Мы сами бесплатно Вам перезвоним</p>
         </div>
       </div>
     </div>
@@ -309,16 +312,16 @@
      </div>
       </div>
 
-<div class="forms">
+<div class="forms" id="iforms">
   <div class="container">
     <div class="row">
     <h1>Онлайн заказ</h1>
-    <div class="forms__info" id="iforms">
+    <div class="forms__info">
       <div class="col-lg-4 col-lg-offset-1 forms__text">
         <p>Вступите в <a href="https://vk.com/playbox_by" target="_blank">группу ВК</a> и получите скидку 5%</p>
         <p>Стоимость доставки в одну сторону 5 BYN. Доставим за 1 час.</p>
         <p>При прокате предоставление пасспорта гражданина РБ и совершеннолетие клиента обязательно.</p>
-        <p>Для консолей PS4 и Xbox One возможен залог по договору.</p>
+        <p>Для приставок PS4 и Xbox One возможен залог по договору.</p>
       </div>
     <div class="col-lg-4 col-lg-offset-2 forms__input">
       <form>
@@ -334,6 +337,49 @@
   </div>
 </div>
 
+<!-- Игры добавлять в тег <li>..</li> -->
+
+<div id="myModal" class="modal fade">
+<div class="modal-dialog modal-sm">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+<h3 class="modal-title">Список игр</h3>
+</div>
+<div class="modal-body"><h3>Для приставок</h3></div>
+<ul>
+  <li>FIFA 17</li>
+  <li>FIFA 16</li>
+  <li>PES 16 </li>
+  <li>PES 16 </li>
+  <li>NBA 16</li>
+  <li>GTA V </li>
+  <li>Mortal Kombat X</li>
+  <li>Star Wars Battlefront</li>
+  <li>FarCry 4</li>
+</ul>
+<div class="modal-body"><h3>Для PS Мувов (Playstation)</h3></div>
+<ul>
+  <li>Sports Champions 2</li>
+  <li>Fitness</li>
+  <li>Killzone</li>
+  <li>Just Dance 2016</li>
+</ul>
+<div class="modal-body"><h3>Для Кинекта (Xbox)</h3></div>
+<ul>
+  <li>Sports Season Two</li>
+  <li>Sports Season One</li>
+  <li>Dance Central 3 </li>
+  <li>Kinect Adventures</li>
+  <li>Sport's Motions</li>
+  <li>Kinect Animals</li>
+  <li>Dance Central 2</li>
+  <li>Adrenaline Sports</li>
+</ul>
+<div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button></div>
+</div>
+</div>
+</div>
+
   <h1 id="icontacts" class="contacts_h1">Контакты</h1>
   <div class="container contacts">
     <div class="row">
@@ -345,11 +391,12 @@
         <p>+37529 138 35 60 Вел</p>
         <p>+37533 638 35 60 Мтс</p>
         <h3>Время работы</h3>
-        <p>С 9.00 до 23.00 ежедневно</p>
+        <p>С 9.00 до 23.00 eжедневно</p>
         <div class="social">
           <div class="social_vk sc"><a href="https://vk.com/playbox_by" target="_blank"><i class="fa fa-vk"></i></a></div>
           <div class="social_instagram sc"><a href="https://www.instagram.com/playbox_by/" target="_blank"><i class="fa fa-instagram"></i></a></div>
           <div class="social_twitter sc"><a href="http://twitter.com/playbox_by" target="_blank"><i class="fa fa-twitter"></i></a></div>
+          <div class="social_facebook sc"><a href="http://www.facebook.com/groups/playbox.by" target="_blank"><i class="fa fa-facebook"></i></a></div>
         </div>
         </div>
       </div>
@@ -359,9 +406,16 @@
     </div>
   </div>
 
-<div class="flattern">
+<div class="footer">
 <div class="container">
-  <h3>Designed by FlatternStudio</h3>
+  <div class="row">
+  <div class="col-lg-4"><h3>Designed by FlatternStudio</h3></div>
+  <div class="col-lg-4 col-lg-offset-4 partners">
+  <div class="col-lg-4"><a href="https://tam.by/" target="_blank"><img src="./css/img/tamby.png" alt="tam.by"></a></div>
+  <div class="col-lg-4"><a href="http://www.all.by/" target="_blank"><img src="./css/img/allby.png" alt="all.by"></a></div>
+  <div class="col-lg-4"><a href="http://1k.by/" target="_blank"><img src="./css/img/1kby.png" alt="1k.by"></a></div>
+  </div>
+  </div>
   </div>
 </div>
 
@@ -372,6 +426,18 @@
     <script>
     $('.product__cost').click(function(){$(this).toggleClass('myclass')})
     </script>
+
+    <script>
+    $(document).ready(function(){
+
+    $('.product__cost').click(function(){
+    $('.info__p, .info__cost').toggleClass('active');
+    $(this).prev().toggleClass('active');
+	  $(this).prev().prev().toggleClass('active');
+    });
+
+    });
+  </script>
     <script src="js/script.js"></script>
     <script>
 $(document).ready(function(){
@@ -387,12 +453,5 @@ $("#form").submit(function() { //устанавливаем событие от�
 });
 });
 </script>
-    <script>
-    $(document).ready(function(){
-    $('.product__cost').click(function(){
-    $('.info__p,.info__cost').toggleClass('active');
-    });
-    });
-    </script>
   </body>
 </html>
