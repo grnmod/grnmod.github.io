@@ -513,10 +513,8 @@
     </script>
     <script>
     $(document).ready(function(){
-    $('.product__cost').click(function(){
-    $('.info__p,.info__cost').toggleClass('active');
-    $(this).prev().toggleClass('active');
-	  $(this).prev().prev().toggleClass('active');
+    $('.product__cost').click(function(e){
+    $(e.target).parent()('.info__p,.info__cost').toggleClass('active');
     });
     });
   </script>
