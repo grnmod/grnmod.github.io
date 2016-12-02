@@ -125,7 +125,7 @@ a:focus {
 .orderinfo_p {
   line-height: 16px;
   margin-top: 16px;
-  margin-bottom: 26px;
+  margin-bottom: 36px;
   font-size: 16px;
 }
 
@@ -287,6 +287,7 @@ button.product__button,button.forms__button {
 
 button.product__button:hover {
   padding: 11px 31px;
+  margin: 21px;
 }
 
 .button {
@@ -486,14 +487,15 @@ input[type=text]:focus {
   display: inline-block;
   margin: 0;
   padding: 0;
-    }
+  margin: 24px 0px 24px 0px;
+}
 
 .modal li {
   float: inherit;
   padding: 3px 4px;
   margin: 3px 0px 0px 3px;
   border-radius: 6px;
-  background-color: #e6e6e6;
+  background-color: #ebf3f7;
 }
 
 .forms__info {
