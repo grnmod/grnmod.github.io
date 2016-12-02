@@ -514,10 +514,11 @@
     <script>
     $(document).ready(function(){
     $('.product__cost').click(function(e){
-    $(e.target).parent()('.info__p,.info__cost').toggleClass('active');
+    $(e.target).parent().find('.info__p,.info__cost').toggleClass('active');
     });
     });
   </script>
+
     <script src="js/script.js"></script>
     <script>
 $(document).ready(function(){
