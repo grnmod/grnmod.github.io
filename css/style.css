@@ -150,7 +150,7 @@ button.menu__button:hover {
   color: #475053;
 }
 
-.advantages h3,.order h3 {
+.advantages h3,.order h3,.footer a {
   font-family: 'Open Sans Regular', sans-serif;
 }
 
@@ -245,7 +245,6 @@ button.orderinfo__button:hover,button.forms__button:hover {
     .product__console {margin-left: 0px; width: auto;}
 }
 
-
 .product__img {
   float: right;
   padding-top: 36px;
@@ -279,9 +278,9 @@ button.product__button,button.forms__button {
   margin: 22px;
 }
 
-@media (min-width: 400px) and (max-width: 970px) {
+@media (min-width: 300px) and (max-width: 970px) {
   button.product__button {
-    margin: 22px;
+    margin: 31px;
   }
 }
 
@@ -524,7 +523,7 @@ input[type=text]:focus {
 
 button.forms__button {
   background: none;
-  border: 1px solid #2e94b9;
+  border: 2px solid #2e94b9;
   box-shadow: none;
   margin: 22px 0px 0px 0px;
   background: url(img/t.png) no-repeat left 50%;
@@ -610,6 +609,10 @@ button.forms__button {
 .footer {
   background: #acdcee;
   margin-top: 68px;
+}
+
+.footer a {
+  color: #475053;
 }
 
 @media (max-width: 767px) and (max-width: 970px) {

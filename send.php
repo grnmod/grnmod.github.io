@@ -19,3 +19,5 @@ if((isset($_POST['names'])&&$_POST['names']!="")&&(isset($_POST['phone'])&&$_POS
         mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
 }
 ?>
+
+<!-- Pl94bxo1620 -->
